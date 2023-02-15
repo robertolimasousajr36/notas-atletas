@@ -1,4 +1,4 @@
-     Olá , Me chamo Roberto estarei explicando como fiz esse codigo em javaScript na primeira linha temos uma Matriz de Objetos chamada atletas dentro dessa matriz de objetos dentro dos objetos temos propriedades o objetivo é dá a media de notas e imprimir no console os dados dos atletas.
+     Olá , Me chamo Roberto estarei explicando como fiz esse codigo em javaScript na primeira linha temos uma Matriz de Objetos chamada atletas dentro dessa matriz temos objetos , e propriedades, o objetivo é dá a media de notas e imprimir no console os dados dos atletas.
  
  // Matriz de Objetos
  
@@ -27,7 +27,17 @@
    let mediaValida = 0
    let notasObtidas = 0 
    
-   // Ultilizei  estrutura de repetição for()  chamei a variavel nomeDosAtletas e atribui o map() com callback dando o parâmetro nomes retornado nomes.nome para ter acesso aos dados da matriz
+   // Ultilizei  estrutura de repetição for()  chamei a variavel nomeDosAtletas e atribui o map() com callback dando o parâmetro nomes retornado nomes.nome ou atletas.nome alterando o parâmetro para atletas para ter acesso aos dados da matriz
+   
+ // exemplo: [0]
+ 
+ for(let i = 0; i <atletas.length; i++){
+    nomeDosAtletas = atletas.map(function(atletas){
+        return atletas.nome
+    })
+    
+   // exemplo [1]
+   
    
    for(let i = 0; i <atletas.length; i++){
     nomeDosAtletas = atletas.map(function(nomes){  // O parâmetro também poder ser atletas return atletas.nome assim acessando o item dentro do objeto
