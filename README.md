@@ -21,7 +21,7 @@
     }
    ];
    
-   // crei três Variaveis add o number "0"
+   // criei três Variaveis add o number "0"
    
    let nomeDosAtletas = 0
    let mediaValida = 0
